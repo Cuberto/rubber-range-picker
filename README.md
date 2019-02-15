@@ -33,9 +33,12 @@ Do not forget to run `pod repo update` if spec not found
 
 ## Usage
 
-Set `RubberRangePicker` as class for custom view in interface builder, or instantiate it from manualy from code 
+Set `RubberRangePicker` as class for custom view in interface builder, or instantiate it from manualy from code.
+
 Use `minimumValue`/`maximumValue` to set border values, and `lowerValue`/`upperValue` to get or set selected values.
+
 Target-action model (valueChanged) can be used to monitor selection changes.
+
 There are some parameters that determine animation behavior, use sample app to check them and find values satisfying your needs.
 
 ## Author
