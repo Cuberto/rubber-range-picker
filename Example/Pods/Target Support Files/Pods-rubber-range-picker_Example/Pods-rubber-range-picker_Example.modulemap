@@ -1,0 +1,6 @@
+framework module Pods_rubber_range_picker_Example {
+  umbrella header "Pods-rubber-range-picker_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

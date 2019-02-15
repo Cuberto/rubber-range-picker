@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'rubber-range-picker_Example' do
+  pod 'rubber-range-picker', :path => '../'
+
+  target 'rubber-range-picker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

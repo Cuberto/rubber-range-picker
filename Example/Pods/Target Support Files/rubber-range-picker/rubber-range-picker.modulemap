@@ -1,0 +1,6 @@
+framework module rubber_range_picker {
+  umbrella header "rubber-range-picker-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - rubber-range-picker (0.4.0)
+
+DEPENDENCIES:
+  - rubber-range-picker (from `../`)
+
+EXTERNAL SOURCES:
+  rubber-range-picker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  rubber-range-picker: 1800171bff0e52e2b5ebea61e1c1fb66480a7f2f
+
+PODFILE CHECKSUM: a1754a63117d70152c8240aef9f03b14fe2e677a
+
+COCOAPODS: 1.6.0
