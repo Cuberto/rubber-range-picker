@@ -8,7 +8,7 @@ Cuberto is a leading digital agency with solid design and development expertise.
 [![CocoaPods](https://img.shields.io/cocoapods/v/rubber-range-picker.svg?style=flat)](http://cocoapods.org/pods/rubber-range-picker)
 [![Swift 4.2](https://img.shields.io/badge/Swift-4.2-green.svg?style=flat)](https://developer.apple.com/swift/)
 
-<!-- ![Animation](https://raw.githubusercontent.com/Cuberto/liquid-swipe/master/Screenshots/animation.gif) -->
+![Animation](https://raw.githubusercontent.com/Cuberto/rubber-range-picker/master/Screenshots/animation.gif)
 
 ## Example
 
