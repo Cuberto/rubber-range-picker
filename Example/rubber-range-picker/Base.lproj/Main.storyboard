@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="VqA-9e-wDd">
             <objects>
-                <viewController id="Ru6-JY-jIt" customClass="ViewController" customModule="rubberRangePickerSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ru6-JY-jIt" customClass="ViewController" customModule="rubber_range_picker_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Of8-os-NSq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

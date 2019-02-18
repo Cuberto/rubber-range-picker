@@ -10,8 +10,8 @@
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
-		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		CE503451221B0EBC007A556B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE50344F221B0EBC007A556B /* LaunchScreen.storyboard */; };
+		CEF8B755221B109F0000A3E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF8B754221B109F0000A3E2 /* Images.xcassets */; };
 		D68331A069F265D437D923C7 /* Pods_rubber_range_picker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD78FB19F5524DBA3E861E4 /* Pods_rubber_range_picker_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,13 +23,13 @@
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6950D51C745AA570E97D8B51 /* Pods-rubber-range-picker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rubber-range-picker_Example.debug.xcconfig"; path = "Target Support Files/Pods-rubber-range-picker_Example/Pods-rubber-range-picker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		80F4B68D2372213B9E6A1537 /* Pods_rubber_range_picker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rubber_range_picker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86283CD14BECA0BA17C7955E /* Pods-rubber-range-picker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rubber-range-picker_Tests.debug.xcconfig"; path = "Target Support Files/Pods-rubber-range-picker_Tests/Pods-rubber-range-picker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB4FC64D813F0522779A2DB9 /* Pods-rubber-range-picker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rubber-range-picker_Tests.release.xcconfig"; path = "Target Support Files/Pods-rubber-range-picker_Tests/Pods-rubber-range-picker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CBD78FB19F5524DBA3E861E4 /* Pods_rubber_range_picker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rubber_range_picker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE503450221B0EBC007A556B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEF8B754221B109F0000A3E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EC14AE661B72A2C3A43980F0 /* Pods-rubber-range-picker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rubber-range-picker_Example.release.xcconfig"; path = "Target Support Files/Pods-rubber-range-picker_Example/Pods-rubber-range-picker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F04E529041432A7AECAFAB79 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,11 +79,11 @@
 		607FACD21AFB9204008FA782 /* Example for rubber-range-picker */ = {
 			isa = PBXGroup;
 			children = (
+				CEF8B754221B109F0000A3E2 /* Images.xcassets */,
+				CE50344F221B0EBC007A556B /* LaunchScreen.storyboard */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for rubber-range-picker";
@@ -179,9 +179,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF8B755221B109F0000A3E2 /* Images.xcassets in Resources */,
+				CE503451221B0EBC007A556B /* LaunchScreen.storyboard in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,12 +255,12 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
+		CE50344F221B0EBC007A556B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
+				CE503450221B0EBC007A556B /* Base */,
 			);
-			name = LaunchScreen.xib;
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
