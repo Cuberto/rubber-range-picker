@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'rubber-range-picker'
-  s.version          = '0.8.0'
+  s.version          = '0.8.1'
   s.swift_version    = '4.2'
   s.summary          = 'Two-sided slider with elastic behavior'
   s.homepage         = 'https://github.com/Cuberto/rubber-range-picker'

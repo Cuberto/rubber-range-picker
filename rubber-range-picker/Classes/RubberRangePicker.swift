@@ -29,11 +29,17 @@ import UIKit
     
     open override var tintColor: UIColor! {
         didSet {
-            trackLayer.outerColor = .lightGray
             trackLayer.innerColor = tintColor
             trackLayer.setNeedsDisplay()
             lowerThumb.tintColor = tintColor
             upperThumb.tintColor = tintColor
+        }
+    }
+    
+    open var lineColor: UIColor! = #colorLiteral(red: 0.862745098, green: 0.862745098, blue: 0.9294117647, alpha: 1) {
+        didSet {
+            trackLayer.outerColor = lineColor
+            trackLayer.setNeedsDisplay()
         }
     }
     
@@ -91,7 +97,7 @@ import UIKit
     }
     
     
-    private let trackLayer = RubberTrackLayer()
+    private var trackLayer = RubberTrackLayer()
     private var lowerThumb = RubberRangeThumb()
     private var upperThumb = RubberRangeThumb()
     private var previousLocation = CGPoint()
@@ -107,7 +113,7 @@ import UIKit
     private var upperStartOffset: CGFloat?
     
     private var vertOffset: CGFloat = 0
-
+    
     public override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -126,6 +132,9 @@ import UIKit
     
     private func configure() {
         tintColor = #colorLiteral(red: 0.168627451, green: 0.6745098039, blue: 0.9882352941, alpha: 1)
+        trackLayer.innerColor = tintColor
+        trackLayer.outerColor = lineColor
+        trackLayer.behavior = elasticBehavior
         lowerThumb.isUserInteractionEnabled = false
         upperThumb.isUserInteractionEnabled = false
         layer.addSublayer(trackLayer)
@@ -137,7 +146,7 @@ import UIKit
                                   width: thumbSize, height: thumbSize)
         displayLink.add(to: .current, forMode: .common)
     }
-
+    
     open override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         previousLocation = touch.location(in: self)
         vertOffset = 0
@@ -246,7 +255,7 @@ import UIKit
                                   y: (bounds.height - thumbSize)/2.0 + upperVertOffset,
                                   width: thumbSize, height: thumbSize)
         updateTrackLayer()
-
+        
     }
     
     private func springCoordinate(forTime time: CGFloat, offset: CGFloat) -> CGFloat {
@@ -260,7 +269,7 @@ import UIKit
         
         return A * exp(-beta * time) * cos(omega * time)
     }
-
+    
     private func updateTrackLayer() {
         trackLayer.frame = bounds
         trackLayer.lowerOffset = lowerThumb.frame.midX
