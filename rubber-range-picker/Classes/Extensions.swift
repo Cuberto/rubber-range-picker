@@ -26,5 +26,3 @@ extension UIColor {
                        blue: min(1.0, (fBlue + 1.0) * lighterPercent), alpha: fAlpha)
     }
 }
-
-

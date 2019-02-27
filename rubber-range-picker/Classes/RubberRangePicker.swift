@@ -124,7 +124,7 @@ import UIKit
         configure()
     }
     
-    override open func prepareForInterfaceBuilder() {
+    open override func prepareForInterfaceBuilder() {
         configure()
         screenUpdate()
         updateTrackLayer()
@@ -196,6 +196,7 @@ import UIKit
         sendActions(for: .valueChanged)
         return true
     }
+    
     open override func endTracking(_ touch: UITouch?, with event: UIEvent?) {
         CACurrentMediaTime()
         if (movingLower) {
@@ -278,5 +279,5 @@ import UIKit
         trackLayer.upperVertOffset = upperThumb.frame.midY - bounds.height/2.0
         trackLayer.redraw()
     }
-    
+
 }
