@@ -96,6 +96,8 @@ import UIKit
         }
     }
     
+    @IBInspectable open var enableValueStep: Bool = false
+    @IBInspectable open var stepValue: Double = 1.0
     
     private var trackLayer = RubberTrackLayer()
     private var lowerThumb = RubberRangeThumb()
@@ -172,9 +174,15 @@ import UIKit
         if movingLower {
             lowerValue = bound(value: lowerValue + deltaValue, toLowerValue: minimumValue, upperValue: maximumValue)
             upperValue = max(upperValue, lowerValue)
+            if enableValueStep == true {
+                lowerValue = Double(roundf(Float(lowerValue / stepValue))) * stepValue
+            }
         } else if movingUpper {
             upperValue = bound(value: upperValue + deltaValue, toLowerValue: minimumValue, upperValue: maximumValue)
             lowerValue = min(upperValue, lowerValue)
+            if enableValueStep == true {
+                upperValue = Double(roundf(Float(upperValue / stepValue))) * stepValue
+            }
         }
         
         let touchOffset = (location.y - bounds.height/2.0)
